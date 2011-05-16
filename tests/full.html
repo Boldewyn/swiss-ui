@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../static/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../static/ui.css" />
+    <style>
+body {
+  margin: 0;
+  font: 12px/1.25 "Droid Sans",sans-serif;
+}
+#global {
+  padding: 50px;
+}
+section {
+  display: block;
+  margin: 0 0 20px;
+}
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div id="global">
+      <section>
+        <p id="dialog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </section>
+      <section>
+        <div id="datepicker"></div>
+      </section>
+      <section>
+        <div id="progressbar"></div>
+      </section>
+      <section>
+        <div id="accordion">
+          <h3><a href="#">Section 1</a></h3>
+          <div><p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p></div>
+          <h3><a href="#">Section 2</a></h3>
+          <div><p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p></div>
+          <h3><a href="#">Section 3</a></h3>
+          <div><p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.</p>
+            <ul><li>List item one</li><li>List item two</li><li>List item three</li></ul></div>
+        </div>
+      </section>
+      <section>
+        <label for="autocomplete">Autocomplete:</label>
+        <input id="autocomplete" type="text" />
+      </section>
+      <section id="button">
+        <button>A button element</button>
+        <input type="submit" value="A submit button"/>
+        <a href="#">An anchor</a>
+      </section>
+      <section>
+        <p id="radio">
+          <input type="radio" id="radio1" name="radio" /><label for="radio1">Choice 1</label>
+          <input type="radio" id="radio2" name="radio" checked="checked" /><label for="radio2">Choice 2</label>
+          <input type="radio" id="radio3" name="radio" /><label for="radio3">Choice 3</label>
+        </p>
+      </section>
+      <section>
+        <p>
+          <input type="checkbox" id="check" /><label for="check">Toggle</label>
+        </p>
+        <p id="format">
+          <input type="checkbox" id="check1" disabled="disabled" /><label for="check1">B</label>
+          <input type="checkbox" id="check2" /><label for="check2">I</label>
+          <input type="checkbox" id="check3" /><label for="check3">U</label>
+        </p>
+        <p>
+          <input type="checkbox" id="check-repl" /><label for="check-repl" class="ui-checkbox">Toggle</label>
+        </p>
+      </section>
+      <section>
+        <div id="slider"></div>
+      </section>
+      <section>
+        <div id="slider-vertical" style="height:200px;"></div>
+      </section>
+      <section>
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Nunc tincidunt</a></li>
+            <li><a href="#tabs-2">Proin dolor</a></li>
+            <li><a href="#tabs-3">Aenean lacinia</a></li>
+          </ul>
+          <div id="tabs-1">
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          </div>
+          <div id="tabs-2">
+            <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+          </div>
+          <div id="tabs-3">
+            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="ui-widget">
+          <div style="margin-top: 20px; padding: 0 .7em;" class="ui-state-highlight ui-corner-all"> 
+            <p><span style="float: left; margin-right: .3em;" class="ui-icon ui-icon-info"></span>
+            <strong>Hey!</strong> Sample ui-state-highlight style.</p>
+          </div>
+        </div>
+        <br/>
+        <div class="ui-widget">
+          <div style="padding: 0 .7em;" class="ui-state-error ui-corner-all"> 
+            <p><span style="float: left; margin-right: .3em;" class="ui-icon ui-icon-alert"></span> 
+            <strong>Alert:</strong> Sample ui-state-error style.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="fakewindowcontain" style="position: relative; width: 96%; height: 200px; padding:1% 4%; overflow:hidden;">
+          <p>Lorem ipsum dolor sit amet,  Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p><p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. </p><p>Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p><p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. </p><p>Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. </p><p>Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat.</p>
+          <!-- ui-dialog -->
+          <div class="ui-overlay"><div class="ui-widget-overlay"></div><div style="width: 302px; height: 152px; position: absolute; left: 50px; top: 30px;" class="ui-widget-shadow ui-corner-all"></div></div>
+          <div class="ui-widget ui-widget-content ui-corner-all" style="position: absolute; width: 280px; height: 130px;left: 50px; top: 30px; padding: 10px;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/jquery-ui.js"></script>
+    <script>
+$(function() {
+  $('#datepicker').datepicker({ maxDate: 3 });
+  $('#progressbar').progressbar({ value: 33 });
+  $('#accordion').accordion();
+  $('#autocomplete').autocomplete({
+    source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "python", "c", "scala", "groovy", "haskell", "perl", "asp", "bespin", "delphi"]
+  });
+  $('#button > *').button({ icons: { primary: 'ui-icon-clock' }});
+  $('#radio').buttonset();
+  $("#check").button();
+  $("#check-repl").button({
+    text: false,
+    icons: {
+      primary: 'ui-icon-radio-on'
+    }
+  });
+  $("#format").buttonset();
+  $("#slider").slider({ range: true, values: [25, 75] });
+  $("#slider-vertical").slider({ orientation: "vertical", range: "min", value: 66 });
+  $("#tabs").tabs();
+  $('#dialog').dialog({
+    title: 'Hello World',
+    height: 200,
+    position: [500, 10] });
+});
+    </script>
+  </body>
+</html>
