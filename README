@@ -1,0 +1,28 @@
+                          swiss ui - A Neutral jQuery UI Theme
+
+This jQuery UI theme is developed with grace and flexibility
+in mind. Like the great Swiss typefaces of the last century,
+swiss ui aims to provide a theme, that doesn’t push itself to
+the fore.
+  Rather it is designed to be used in as many heterogenuous
+environments as possible. Take a look at the demo page [1] to
+get an impression of how swiss ui interacts with different
+backgrounds. The widgets keep neutral and replace eye-catching
+extravagance with simple elegance.
+
+If you’re looking for a more stylish theme, let me suggest
+“Aristo” [2] to you. It’s a port of Cappuccino’s interface to
+jQuery UI.
+  The theme is licensed under the same terms as jQuery UI
+itself, namely the MIT license and the GPL v2.
+  The source code is hosted at GitHub [3], together with a bug
+tracker and forking possibilities. Any feedback is appreciated!
+
+swiss ui is created by Manuel Strehl [4].
+
+--
+
+[1] http://boldewyn.github.com/swiss-ui/tests/demo.hmtl
+[2] http://taitems.github.com/Aristo-jQuery-UI-Theme/
+[3] http://github.com/Boldewyn/swiss-ui/
+[4] http://www.manuel-strehl.de
