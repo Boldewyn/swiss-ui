@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../static/jquery-ui.min.css" />
-    <link rel="stylesheet" href="../static/ui.css" />
+    <link rel="stylesheet" href="../swiss-ui/swiss.css" />
+    <link rel="stylesheet" href="../static/reset.css" />
     <style>
 body {
   margin: 0;
@@ -16,11 +16,31 @@ section {
   display: block;
   margin: 0 0 20px;
 }
+#choosecolor span {
+  display: inline-block;
+  border: 1px solid #aaa;
+  width: 3em;
+  height: 1.25em;
+  cursor: pointer;
+}
     </style>
     <title></title>
   </head>
   <body>
     <div id="global">
+      <p id="choosecolor">
+        Background:
+        <span style="background:#ffffff"></span>
+        <span style="background:#bb0000"></span>
+        <span style="background:#00bb00"></span>
+        <span style="background:#0000bb"></span>
+        <span style="background:#bb00bb"></span>
+        <span style="background:#bbbb00"></span>
+        <span style="background:#777777"></span>
+        <span style="background:#ccbbaa"></span>
+        <span style="background:#443322"></span>
+        <span style="background:#000000"></span>
+      </p>
       <section>
         <p id="dialog">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </section>
@@ -147,7 +167,10 @@ $(function() {
   $('#dialog').dialog({
     title: 'Hello World',
     height: 200,
-    position: [500, 10] });
+    position: [600, 10] });
+  $('#choosecolor span').click(function() {
+    $('body').css('backgroundColor', $(this).css('backgroundColor'));
+  });
 });
     </script>
   </body>
