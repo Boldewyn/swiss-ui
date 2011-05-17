@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../swiss-ui/swiss.css" />
-    <link rel="stylesheet" href="../static/reset.css" />
     <style>
 body {
   margin: 0;
   font: 12px/1.25 "Droid Sans",sans-serif;
+  background: #bb0000 url(../static/body.png) no-repeat left top;
 }
 #global {
   padding: 50px;
@@ -28,6 +28,9 @@ section {
   </head>
   <body>
     <div id="global">
+      <p>
+        <a href="../index.html">Back to the start.</a>
+      </p>
       <p id="choosecolor">
         Background:
         <span style="background:#ffffff"></span>
@@ -167,9 +170,9 @@ $(function() {
   $('#dialog').dialog({
     title: 'Hello World',
     height: 200,
-    position: [600, 10] });
+    position: [600, 80] });
   $('#choosecolor span').click(function() {
-    $('body').css('backgroundColor', $(this).css('backgroundColor'));
+    $('body').css('background', $(this).css('backgroundColor'));
   });
 });
     </script>

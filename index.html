@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>swiss ui - A Neutral jQuery UI Theme</title>
+    <link rel="stylesheet" href="swiss-ui/swiss.css" />
+    <style>
+body {
+  font: normal 100%/1.25 Helvetica,Arial,sans-serif;
+  color: black;
+  background: #B00 url(static/body.png) no-repeat top left;
+  margin: 0;
+}
+#global {
+  background: url(static/cross.png) no-repeat left 200px;
+  min-height: 900px;
+  width: 1000px;
+}
+nav {
+  width: 160px;
+  margin: 0 20px;
+  float: left;
+}
+nav ul, nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav span,
+nav a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 1px;
+  background: rgba(255,255,255,.15);
+}
+nav a:hover,
+nav a:focus {
+  outline: none;
+  background: rgba(255,255,255,.33);
+}
+article {
+  margin: 20px 20px 20px 220px;
+}
+section {
+  margin: 0 0 40px;
+}
+h1 {
+  color: white;
+  font: bold 1000%/1 Helvetica,Arial,sans-serif;
+  margin: 0 0 20px;
+}
+h2 {
+  font: bold 382%/1 Helvetica,Arial,sans-serif;
+  margin: 0 0 20px;
+  letter-spacing: -.03em;
+  word-spacing: -.07em;
+}
+a {
+  text-decoration: none;
+  color: #f88;
+}
+a:hover, a:focus {
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div id="global">
+      <nav>
+        <ul>
+          <li><span>Start</span></li>
+          <li><a href="https://github.com/Boldewyn/swiss-ui/">Github Repository</a></li>
+          <li><a href="http://jqueryui.com">jQuery UI</a></li>
+          <li><a href="tests/demo.html">Demo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <header>
+          <h1>swiss ui</h1>
+          <h2>A Neutral jQuery UI Theme</h2>
+        </header>
+        <section>
+          <p>This jQuery UI theme is developed with grace and flexibility
+          in mind. Like the great Swiss typefaces of the last century,
+          <strong>swiss ui</strong> aims to provide a theme, that doesn’t
+          push itself to the fore.</p>
+          <p>Rather it is designed to be used in as many heterogenuous
+          environments as possible. Take a look at the
+          <a href="tests/demo.html">demo page</a> to get an impression of
+          how <strong>swiss ui</strong> interacts with different
+          backgrounds. The widgets keep neutral and replace eye-catching
+          extravagance with simple elegance.</p>
+        </section>
+        <section>
+          <div id="datepicker"></div>
+          <div id="dialog"><p>This dialog is filled with finest, handpicked
+          Lorem Ipsum for your reading pleasure.</p></div>
+        </section>
+        <section>
+          <p>If you’re looking for a more stylish theme, let me suggest
+          <a href="http://taitems.github.com/Aristo-jQuery-UI-Theme/">“Aristo”</a>
+          to you. It’s a port of Cappuccino’s interface to jQuery UI.</p>
+          <p>The theme is licensed under the same terms as jQuery UI
+          itself, namely the MIT license and the GPL v2.</p>
+          <p>The source code is hosted at
+          <a href="http://github.com/Boldewyn/swiss-ui/">GitHub</a>,
+          together with a bug tracker and forking possibilities. Any
+          feedback is appreciated!</p>
+        </section>
+        <section>
+          <p><strong>swiss ui</strong> is created by <a
+          href="http://www.manuel-strehl.de">Manuel Strehl</a>.</p>
+        </section>
+      </article>
+    </div>
+    <script src="static/jquery.js"></script>
+    <script src="static/jquery-ui.js"></script>
+    <script>
+$('#datepicker').datepicker({maxDate:0});
+$('#dialog').dialog({
+  title: 'A Simple Dialog',
+  height: 200,
+  position: [600, $('#dialog').parent().offset().top + 10] });
+    </script>
+  </body>
+</html>
