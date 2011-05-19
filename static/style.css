@@ -1,0 +1,60 @@
+body {
+  font: normal 16px/1.25 Helvetica,Arial,sans-serif;
+  color: black;
+  background: #B00 url(body.png) no-repeat top left;
+  margin: 0;
+}
+nav, article, header, section {
+  display: block;
+}
+#global {
+  width: 1000px;
+  padding: 20px;
+}
+nav {
+  width: 160px;
+  margin: 0 20px 0 0;
+  float: left;
+}
+nav ul, nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav span,
+nav a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 1px;
+  background: #d92d2d;
+}
+nav a:hover,
+nav a:focus {
+  outline: none;
+  background: #df5959;
+}
+article {
+  margin: 0 20px 20px 220px;
+  overflow: auto;
+}
+section {
+  margin: 0 0 40px;
+}
+h1 {
+  color: white;
+  font: bold 1000%/1 Helvetica,Arial,sans-serif;
+  margin: 0 0 20px;
+}
+h2 {
+  font: bold 382%/1 Helvetica,Arial,sans-serif;
+  margin: 0 0 20px;
+  letter-spacing: -.03em;
+  word-spacing: -.07em;
+}
+a {
+  text-decoration: none;
+  color: #f88;
+}
+a:hover, a:focus {
+  color: white;
+}
