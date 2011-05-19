@@ -5,6 +5,10 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="swiss ui is a jQuery UI theme with neutrality in mind" />
+    <meta name="author" content="Manuel Strehl" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>swiss ui - A Neutral jQuery UI Theme</title>
     <link rel="stylesheet" href="static/style.css" />
     <link rel="stylesheet" href="swiss-ui/swiss.css" />
@@ -15,6 +19,11 @@
 }
 #datepicker {
   margin-left: 140px;
+}
+@media (max-width: 1040px) {
+  #datepicker {
+    margin-left: 0;
+  }
 }
     </style>
   </head>
@@ -30,7 +39,7 @@
       </nav>
       <article>
         <header>
-          <h1>swiss ui</h1>
+          <h1>swiss ui</h1>
           <h2>A Neutral jQuery UI Theme</h2>
         </header>
         <section>
@@ -69,12 +78,15 @@
     </div>
     <script src="static/jquery.js"></script>
     <script src="static/jquery-ui.js"></script>
+    <script src="static/jquery.fittext.js"></script>
     <script>
 $('#datepicker').datepicker({maxDate:0});
 $('#dialog').dialog({
   title: 'A Simple Dialog',
   height: 200,
   position: [670, $('#dialog').parent().offset().top] });
+$('h1').fitText(.4);
+$('h2').fitText();
     </script>
   </body>
 </html>

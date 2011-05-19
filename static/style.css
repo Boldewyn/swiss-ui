@@ -35,7 +35,6 @@ nav a:focus {
 }
 article {
   margin: 0 20px 20px 220px;
-  overflow: auto;
 }
 section {
   margin: 0 0 40px;
@@ -57,4 +56,27 @@ a {
 }
 a:hover, a:focus {
   color: white;
+}
+
+@media (max-width: 1040px) {
+  nav {
+    float: none;
+    width: auto;
+  }
+  nav li, nav li span, nav li a {
+    display: inline-block;
+  }
+  nav li span, nav li a {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+  div#global {
+    background-image: none;
+    width: auto;
+  }
+  article {
+    margin: 0;
+    width: auto;
+  }
 }
